@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import logo from './assets/logo.png';
 import { getRegions } from './services/dashboard';
+import Filters from './Filters';
 import './App.css';
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
         console.log(error)
     }
     
+    const onRegionSelectionChange = (evt, value, reason) => {
+        console.log(evt, value, reason)
+    }
+
     return (
         <div className={'app'}>
             <header className={'app-header'}>
@@ -31,7 +36,7 @@ function App() {
                 </a>
             </header>
             <div className={'wrapper'}>
-                <p>grafico</p>
+                <Filters regions={regions} onChange={onRegionSelectionChange}/>
             </div>
             <footer>
                 <p>COVID-19 pandemic progression monitor</p>
