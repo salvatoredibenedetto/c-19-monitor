@@ -50,7 +50,7 @@ function App() {
                 {report && report.length > 0 && (
                     <ul className={'report'}>
                         {report.map(r => (
-                            <li>
+                            <li key={r.region.province}>
                                 <span style={{marginRight: 20}}>{`Data: ${r.date}`}</span>
                                 <span style={{marginRight: 20}}>{`Regione: ${r.region.province || r.region.name}`}</span>
                                 <span>{`Contagi: ${r.confirmed}`}</span>

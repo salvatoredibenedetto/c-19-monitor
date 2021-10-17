@@ -15,6 +15,7 @@ const Filters = ({regions, onChange}) => {
                 sx={{ width: 300 }}
                 renderInput={(params) => <TextField {...params} label={'Regions'} />}
                 onChange={onChange}
+                isOptionEqualToValue={(option, value) => option.id === value.id}
             />
         </FiltersRoot>        
     )
