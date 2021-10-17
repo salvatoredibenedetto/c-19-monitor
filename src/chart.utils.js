@@ -23,7 +23,7 @@ const dataSetup = {
     labels: [],
     datasets: [
       {
-        label: '# of infections',
+        label: 'Number of infections',
         data: [],
         borderWidth: 1,
       },
