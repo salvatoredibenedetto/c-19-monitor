@@ -2,7 +2,7 @@ import { styled } from '@mui/system';
 
 const FiltersRoot = styled('div')({
   display: 'flex',
-  justifyContent: 'space-around',
+  justifyContent: 'center',
   marginTop: 40
 });
 

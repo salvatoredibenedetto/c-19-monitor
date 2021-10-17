@@ -11,3 +11,13 @@ export const getRegions = ({params, onSuccess, onError} = {}) => {
       })
 
 }
+
+export const getReports = ({params, onSuccess, onError} = {}) => {
+    axios.get('/reports', {params})
+      .then(response => {
+        onSuccess(response.data);
+      })
+      .catch(error => {
+        onError(error);
+      })
+}
