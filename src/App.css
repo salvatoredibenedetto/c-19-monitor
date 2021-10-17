@@ -17,3 +17,17 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.app-logo {
+    height: 130px;
+}
+
+.chartContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.chartSizer {
+    width: 80%;
+    max-width: 1200px;
+}
